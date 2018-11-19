@@ -10,7 +10,7 @@ public class InsertMysql {
 //        args = new String[2];
         // 解析参数
         if (args.length != 2) {
-            System.out.println("参数不对，请依次输入需要读取的txt，输出SQL语句结构的txt");
+            System.out.println("参数不对，请依次输入需要读取的txt，输出SQL语句结构的.sql");
             return;
         }
         ReadTXT = args[0];
