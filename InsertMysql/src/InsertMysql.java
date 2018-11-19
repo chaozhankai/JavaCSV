@@ -61,7 +61,7 @@ public class InsertMysql {
 //            file.createNewFile();
             try (FileWriter writer = new FileWriter(file,true); // 追加写入,一般可以自动创建文件
                  BufferedWriter out = new BufferedWriter(writer)){
-                out.write(dateString+"     一共更新了"+list.size()+"条数据"+System.lineSeparator()); // \r\n为换行
+                out.write(dateString+"     一共更新了"+list.size()+"条数据"+System.lineSeparator()); // \r\n为win换行
                 for (Object s:list){
                     System.out.println(s);
                     out.write(before+s.toString()+after+System.lineSeparator());
